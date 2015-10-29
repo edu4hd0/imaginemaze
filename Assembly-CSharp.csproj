@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{61FA52D2-FDAA-DFE6-2E7B-55495F0FBE48}</ProjectGuid>
+	<ProjectGuid>{EFD4AA9D-E1C6-F513-4AA4-C92C5997E899}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,10 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraFOV.cs" />
+     <Compile Include="Assets\Game\Scripts\CameraFOV.cs" />
      <Compile Include="Assets\Game\Scripts\MazeBuilder.cs" />
      <Compile Include="Assets\Game\Scripts\OcclusionSystem.cs" />
      <Compile Include="Assets\Game\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Game\Scripts\TileMesh.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -140,7 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{7E984E5C-87D2-31CD-477D-C3AD7E0BBB3D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{C259F86F-35E5-0EAF-0998-BF752A3D9233}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

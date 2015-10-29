@@ -35,6 +35,8 @@ public class OcclusionSystem : MonoBehaviour {
         }
         renderersEnabled.Clear();
         Vector3 camForward = transform.forward;
+        Vector3 pos = transform.position;
+        transform.position = new Vector3(pos.x, 4.9f, pos.z);
         transform.forward = new Vector3(transform.forward.x, 0 , transform.forward.z).normalized;
         for (int j = 0; j < Screen.width / minHoleSizeInPixels; j++)
         {
@@ -55,6 +57,7 @@ public class OcclusionSystem : MonoBehaviour {
             }
         }
         transform.forward = camForward;
+        transform.position = pos;
  
         for (int i = 0; i < renderersEnabled.Count; i++)
         {
