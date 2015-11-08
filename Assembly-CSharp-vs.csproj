@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Game\Scripts\CameraFOV.cs" />
+     <Compile Include="Assets\Game\Scripts\DestructibleObject.cs" />
      <Compile Include="Assets\Game\Scripts\MazeBuilder.cs" />
      <Compile Include="Assets\Game\Scripts\OcclusionSystem.cs" />
      <Compile Include="Assets\Game\Scripts\Spawner.cs" />
